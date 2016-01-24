@@ -11,6 +11,8 @@ Get your data back with a call to Retrieve().
 
 Delete your data with Forget(). 
 
+You can find a real usage example in this project: https://github.com/Snorvarg/simplicity
+
 Example: (Also found in source file)
 
 	// Store an array of data about flowers.
