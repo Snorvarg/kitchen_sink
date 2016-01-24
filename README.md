@@ -1,7 +1,7 @@
 # kitchen_sink
 Allow you to quickly save and retrieve any type of value in a kitchen_sink mysql table.
 
-Designed for Cake PHP 3, but is probably not too difficult to 'downgrade' to Cake 2.
+The KitchenSink.php is adapted for Cake PHP 2, while the KitchenSinkTable.php is adapted for Cake 3. 
 
 This is a 'everything and the kitchen sink' table, where you can store any type of value through Store(). You give your data a key, a unique name, to identify it. 
 
@@ -13,7 +13,7 @@ Delete your data with Forget().
 
 You can find a real usage example in this project: https://github.com/Snorvarg/simplicity
 
-Example: (Also found in source file)
+Examples for Cake 2: (Also found in source file)
 
 	// Store an array of data about flowers.
 	$this->loadModel('KitchenSink');
