@@ -33,3 +33,18 @@ Examples for Cake 2: (Also found in source file)
 	// Several calls to Store() with same key will overwrite old value.
 	$this->KitchenSink->Store("Monkeys", array("Messy things in trees."));
 	$this->KitchenSink->Store("Monkeys", array("Monkeys in the djungle."));
+	
+Examples for Cake 3: 
+
+	$kitchenSink = TableRegistry::get('KitchenSink');
+	
+	$kitchenSink->Store('apples', array('green', 'red' => 12, 'blue' => array('no!!'), 'yellow' => 2));
+	$appleInfo = $kitchenSink->Retrieve('apples');
+	
+	$kitchenSink->Forget('apples');
+	$whatApples = $kitchenSink->Retrieve('apples'); // Returns null.
+	
+	$nullIfNotThere = $kitchenSink->Retrieve('FancyKey');
+	
+	// This is a nice shortcut to give a default value if there is none in database.
+	$alwaysDefined = $kitchenSink->Retrieve('ScreaminglyFancyKey', 'a default value here');
