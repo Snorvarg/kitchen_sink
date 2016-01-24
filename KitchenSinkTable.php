@@ -7,6 +7,9 @@ use Cake\ORM\Table;
 /**
  * KitchenSink Table
  * 
+ * Developer: Jon Lennryd, Madskull Creations
+ *  Cake PHP 3
+ * 
  * Allow you to quickly save away a value globally available for any time. (apart from Session, which works great for any Session-data.)
  * The value is a VARCHAR stored through php's serialize() function. 
  * 
