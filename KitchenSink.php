@@ -4,6 +4,9 @@ App::uses('AppModel', 'Model');
 /**
  * KitchenSink Model
  * 
+ * Developer: Jon Lennryd, Madskull Creations
+ *  For Cake PHP 2.x
+ * 
  * Allow you to quickly save away a value globally available for any time. (apart from Session, which works great for any Session-data.)
  * The value is a VARCHAR stored through php's serialize() function. 
  * 
